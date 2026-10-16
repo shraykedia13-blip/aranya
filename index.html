@@ -1,0 +1,156 @@
+<title>Aranya Naturals</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Aranya Naturals sells small-batch Indian herbal teas: tulsi, kadha, hibiscus and turmeric blends, sourced from named farms and packed in Bengaluru. Free shipping over ₹499.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://shraykedia13-blip.github.io/aranya/">
+<meta property="og:title" content="Aranya Naturals | Small-batch Indian herbal teas">
+<meta property="og:description" content="Tulsi, kadha, hibiscus and turmeric teas from named farms, packed in Bengaluru.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"#org","name":"Aranya Naturals","url":"https://shraykedia13-blip.github.io/aranya/","description":"Small-batch Indian herbal tea company based in Bengaluru.","foundingLocation":"Bengaluru, Karnataka, India"},
+{"@type":"LocalBusiness","name":"Aranya Naturals Tea Room","address":{"@type":"PostalAddress","streetAddress":"14 Church Street Lane","addressLocality":"Bengaluru","addressRegion":"Karnataka","postalCode":"560001","addressCountry":"IN"},"openingHours":"Mo-Sa 10:00-20:00","priceRange":"₹₹"},
+{"@type":"Product","name":"Tulsi Dawn herbal tea","brand":{"@type":"Brand","name":"Aranya Naturals"},"description":"Holy basil, green tea and lemongrass blend, 50 g.","offers":{"@type":"Offer","priceCurrency":"INR","price":"349","availability":"https://schema.org/InStock"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Aranya Naturals tea caffeine free?","acceptedAnswer":{"@type":"Answer","text":"Kadha Calm, Hibiscus Dusk and Turmeric Gold are caffeine free. Tulsi Dawn contains a small amount of green tea."}},
+{"@type":"Question","name":"How long does delivery take?","acceptedAnswer":{"@type":"Answer","text":"Bengaluru orders arrive in 1 to 2 days and the rest of India in 3 to 6 days. Shipping is free above ₹499."}},
+{"@type":"Question","name":"How should I brew tulsi tea?","acceptedAnswer":{"@type":"Answer","text":"Use 1 teaspoon per cup, steep in water just off the boil for 4 minutes."}}]}]}
+</script>
+<style>
+/* Layout: poster-style hero, product rail, story, FAQ, tea room. Colors from leaf, turmeric and hibiscus. */
+:root{
+  --bg:#EDF0E8; --surface:#FFFFFF; --ink:#13281F; --muted:#4B5F54; --line:#CBD5C8;
+  --leaf:#1F4D36; --turmeric:#D49A12; --hibiscus:#9A2B4B; --on-leaf:#F3F6EE;
+  --display:'Young Serif',Georgia,serif; --body:'DM Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1A14; --surface:#17261E; --ink:#E8EFE4; --muted:#9DB0A3; --line:#2A3E32;
+  --leaf:#7FC59B; --turmeric:#E8B02E; --hibiscus:#E0708F; --on-leaf:#0F1A14; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1A14; --surface:#17261E; --ink:#E8EFE4; --muted:#9DB0A3; --line:#2A3E32;
+  --leaf:#7FC59B; --turmeric:#E8B02E; --hibiscus:#E0708F; --on-leaf:#0F1A14; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+a{color:inherit}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;flex-wrap:wrap}
+.logo{font-family:var(--display);font-size:1.35rem;text-decoration:none}
+nav{display:flex;gap:18px;font-size:.92rem;align-items:center}
+nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--ink)}
+.cartbtn{border:1.5px solid var(--ink);background:none;color:var(--ink);padding:7px 14px;border-radius:999px;font:inherit;font-size:.9rem;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:36px 0 56px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--hibiscus)}
+.hero p{max-width:46ch;color:var(--muted);font-size:1.08rem;margin:20px 0 26px}
+.btn{display:inline-block;background:var(--leaf);color:var(--on-leaf);padding:13px 24px;border-radius:6px;text-decoration:none;font-weight:700;border:0;font-family:inherit;font-size:1rem;cursor:pointer}
+.btn:focus-visible,.cartbtn:focus-visible,a:focus-visible{outline:3px solid var(--turmeric);outline-offset:2px}
+.leafart{aspect-ratio:1;max-width:100%;border-radius:50% 50% 8px 50%;background:var(--leaf);position:relative;overflow:hidden}
+.leafart svg{position:absolute;inset:0;width:100%;height:100%}
+.facts{display:flex;gap:10px 28px;flex-wrap:wrap;border-block:1px solid var(--line);padding:14px 0;font-size:.9rem;color:var(--muted)}
+.facts b{color:var(--ink)}
+section{padding:56px 0}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:8px}
+.sub{color:var(--muted);max-width:56ch;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.swatch{height:96px;border-radius:6px}
+.card h3{font-size:1.25rem}
+.card .notes{color:var(--muted);font-size:.9rem;margin:0}
+.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.buy{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px}
+.price{font-weight:700;font-variant-numeric:tabular-nums}
+.add{background:none;border:1.5px solid var(--leaf);color:var(--leaf);padding:7px 14px;border-radius:6px;font:inherit;font-weight:700;cursor:pointer}
+.add:hover{background:var(--leaf);color:var(--on-leaf)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.story p{margin:0 0 14px;color:var(--muted)}
+dl.farms{margin:0;display:grid;gap:10px}
+dl.farms div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+dl.farms dt{font-weight:700} dl.farms dd{margin:0;color:var(--muted);text-align:right}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted);max-width:62ch}
+.room{background:var(--leaf);color:var(--on-leaf);border-radius:12px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.room h2{color:var(--on-leaf)} .room p{margin:4px 0;color:inherit;opacity:.92}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+@media(max-width:720px){.hero,.story,.room{grid-template-columns:1fr}.leafart{max-width:260px}}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="#">Aranya Naturals</a>
+  <nav aria-label="Main"><a href="#teas">Teas</a><a href="#story">Our farms</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
+  <button class="cartbtn" id="cartbtn" type="button">Cart (<span id="count">0</span>)</button></nav>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Forest-grown tea, <em>brewed the Indian way.</em></h1>
+    <p>Aranya Naturals blends tulsi, hibiscus, turmeric and ginger from named farms in Karnataka and Kerala. Packed fresh in Bengaluru every week.</p>
+    <a class="btn" href="#teas">Shop the blends</a>
+  </div>
+  <div class="leafart" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path d="M100 170 C60 130 55 70 100 28 C145 70 140 130 100 170Z" fill="#D49A12" opacity=".95"/><path d="M100 170 L100 44" stroke="#1F4D36" stroke-width="3" fill="none"/><path d="M100 90 L74 70 M100 110 L128 86 M100 132 L76 114" stroke="#1F4D36" stroke-width="2.5" fill="none"/></svg>
+  </div>
+</div>
+<div class="facts"><span><b>4</b> blends</span><span><b>50 g</b> tins</span><span>Packed in <b>Bengaluru</b></span><span>Free shipping over <b>₹499</b></span></div>
+
+<section id="teas">
+  <h2>The four blends</h2>
+  <p class="sub">Each tin makes about 25 cups. Prices include GST.</p>
+  <div class="grid">
+    <article class="card"><div class="swatch" style="background:#5E8C4A"></div><span class="tag">Light caffeine</span><h3>Tulsi Dawn</h3><p class="notes">Holy basil, green tea, lemongrass. Bright and peppery.</p><div class="buy"><span class="price">₹349</span><button class="add" type="button" data-n="Tulsi Dawn">Add</button></div></article>
+    <article class="card"><div class="swatch" style="background:#8A5A32"></div><span class="tag">Caffeine free</span><h3>Kadha Calm</h3><p class="notes">Dry ginger, black pepper, cinnamon, giloy. A warming evening cup.</p><div class="buy"><span class="price">₹329</span><button class="add" type="button" data-n="Kadha Calm">Add</button></div></article>
+    <article class="card"><div class="swatch" style="background:#9A2B4B"></div><span class="tag">Caffeine free</span><h3>Hibiscus Dusk</h3><p class="notes">Dried hibiscus, rose petals, mint. Tart, and lovely over ice.</p><div class="buy"><span class="price">₹379</span><button class="add" type="button" data-n="Hibiscus Dusk">Add</button></div></article>
+    <article class="card"><div class="swatch" style="background:#D49A12"></div><span class="tag">Caffeine free</span><h3>Turmeric Gold</h3><p class="notes">Lakadong turmeric, ginger, black pepper. Best with warm milk.</p><div class="buy"><span class="price">₹399</span><button class="add" type="button" data-n="Turmeric Gold">Add</button></div></article>
+  </div>
+</section>
+
+<section id="story">
+  <div class="story">
+    <div><h2>Sourced by name, not by region</h2>
+    <p>We buy from farms we can visit. Every tin lists where its main ingredient was grown and when it was packed.</p>
+    <p>Orders are packed in small lots in Bengaluru, so the tea you open is weeks old, not months.</p></div>
+    <dl class="farms">
+      <div><dt>Tulsi</dt><dd>Chikkamagaluru, Karnataka</dd></div>
+      <div><dt>Turmeric</dt><dd>Jaintia Hills, Meghalaya</dd></div>
+      <div><dt>Ginger and pepper</dt><dd>Wayanad, Kerala</dd></div>
+      <div><dt>Hibiscus</dt><dd>Kolar, Karnataka</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Questions people ask</h2>
+  <p class="sub">Short answers first.</p>
+  <details><summary>Is the tea caffeine free?</summary><p>Kadha Calm, Hibiscus Dusk and Turmeric Gold are caffeine free. Tulsi Dawn contains a small amount of green tea.</p></details>
+  <details><summary>How long does delivery take?</summary><p>Bengaluru orders arrive in 1 to 2 days. The rest of India takes 3 to 6 days. Shipping is free above ₹499.</p></details>
+  <details><summary>How do I brew tulsi tea?</summary><p>Use 1 teaspoon per cup. Steep in water just off the boil for 4 minutes.</p></details>
+  <details><summary>Can I return a tin?</summary><p>Yes. Unopened tins can be returned within 7 days of delivery for a refund.</p></details>
+</section>
+
+<section id="visit">
+  <div class="room">
+    <div><h2>Visit the tea room</h2><p>Taste before you buy. Free tastings every Saturday.</p></div>
+    <div><p><b>Aranya Tea Room</b></p><p>14 Church Street Lane, Bengaluru 560001</p><p>Mon to Sat, 10 am to 8 pm</p><p>Demo address for coursework</p></div>
+  </div>
+</section>
+</main>
+<footer>Aranya Naturals is a fictional demo brand created for a digital commerce course project.</footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var n=0,c=document.getElementById('count'),t=document.getElementById('toast'),tm;
+  function say(m){t.textContent=m;t.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('on')},1800)}
+  document.querySelectorAll('.add').forEach(function(b){b.addEventListener('click',function(){n++;c.textContent=n;say(b.dataset.n+' added to cart')})});
+  document.getElementById('cartbtn').addEventListener('click',function(){say(n?n+' tin'+(n>1?'s':'')+' in your cart':'Your cart is empty')});
+})();
+</script>
